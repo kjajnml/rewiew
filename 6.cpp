@@ -10,7 +10,7 @@ bool is_same_sign(const vector<double>& arr) {
     else return false;
 
     for (size_t i = 1; i < arr.size(); i++) {
-        if (arr[i] == 0) continue;
+        if (arr[i] == 0) return false;
 
         if (arr[i] > 0 && sign != 1) return false;
         if (arr[i] < 0 && sign != -1) return false;
